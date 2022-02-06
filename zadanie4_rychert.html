@@ -1,0 +1,95 @@
+﻿<html>
+<head>
+	<META HTTP - EQUIV = "content-type" CONTENT = "text/html; CHARSET=iso-8859-2">
+	<!-- Patryk Rychert 06.02.2022 -->
+
+	<style>
+
+	  .left {
+  text-align: left;
+  vertical-align: text-top;
+  }
+  textarea {
+  resize: none;
+}
+
+	body{
+		font-family:"Times New Roman", Times, serif;
+	}
+
+	.thick{
+		font-weight:bold;
+	}
+	.underline{
+		text-decoration: underline;
+	}
+
+	.big{
+		font-size: x-large;
+	}
+
+	table, th, td {
+	width: 710px;
+	border: 1px solid black;
+	border-collapse: collapse;
+	}
+
+	.center {
+	margin: auto;
+	text-align: center;
+}
+
+	</style>
+
+	</head>
+
+<body>
+
+<h3> 1) <t class="underline">Zewnętrzny</t> arkusz stylów. </h3>
+<textarea rows=4 cols=64>
+<head>
+      <link rel="Stylesheet" type="text/css" href="style.css" />
+</head>
+</textarea>
+
+<h3> 2) Styl <t class="underline">lokalny</t> inaczej: (styl wpisany, liniowy, linijkowy, w linii) czyli
+dopisanie arkusza do wybranego bloku treści strony. </h3>
+
+<textarea rows=3 cols=64>
+<selektor style="cecha1: wartość1; cecha2: wartość2...">...</selektor>
+</textarea>
+
+<h3> 3) <t class="underline">Wewnętrzny</t> arkusz stylów.</h3>
+
+<textarea rows=8 cols=64>
+<head>
+ <style type="text/css">
+ selektor1 { cecha: wartość; cecha2: wartość2... }
+ selektor2 { cecha: wartość; cecha2: wartość2... }
+ </style>
+</head>
+
+</textarea>
+
+<h3> 4) <t class="underline">Alternatywny</t> arkusz stylów. </h3>
+
+<textarea rows=10 cols=64>
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css" title="Nazwa domyślna" />
+<link rel="Alternate stylesheet" type="text/css" href="style1.css" title="Nazwa 1" />
+<link rel="Alternate stylesheet" type="text/css" href="style2.css" title="Nazwa 2" />
+</head>
+
+</textarea>
+
+<h3> 5) <t class="underline">Import</t> arkusza stylów. </h3>
+
+<textarea rows=5 cols=64>
+<style type="text/css">
+ @import url(adres zewnętrznego arkusza stylów);
+</style>
+
+</textarea>
+
+	</body>
+</html>

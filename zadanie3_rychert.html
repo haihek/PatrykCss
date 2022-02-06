@@ -1,0 +1,131 @@
+﻿<html>
+<head>
+	<META HTTP - EQUIV = "content-type" CONTENT = "text/html; CHARSET=iso-8859-2">
+	<!-- Patryk Rychert 02.02.2022 -->
+
+	<style>
+
+	  .left {
+  text-align: left;
+  vertical-align: text-top;
+  }
+  
+  ol {
+    counter-reset: list;
+	}
+	ol > li {
+    list-style: none;
+	}
+	ol > li:before {
+    content: counter(list) ") ";
+    counter-increment: list;
+	}
+
+	body{
+		font-family:"Times New Roman", Times, serif;
+	}
+
+	.thick{
+		font-weight:bold;
+	}
+	.underline{
+		text-decoration: underline;
+	}
+
+	.big{
+		font-size: x-large;
+	}
+
+	table, th, td {
+	width: 710px;
+	border: 1px solid black;
+	border-collapse: collapse;
+	}
+
+	.center {
+	margin: auto;
+	text-align: center;
+}
+
+	</style>
+
+	</head>
+
+<body>
+
+<table class="center">
+  <tr>
+    <th colspan="3" class="big">Cechy modyfikowania formatowania w:</th>
+  </tr>
+  <tr>
+    <td>w HTML</td>
+    <td>w CSS</td>
+  </tr>
+  <tr>
+    <td class="left">modyfikacja wyglądu elementów strony jest
+bardzo <t class="thick">żmudna</t> (atrybuty i znaczniki które
+za to odpowiadają, są porozrzucane w
+różnych miejscach kodu, mieszając się ze
+strukturą dokumentu).</td>
+    <td class="left">rozdzielenie <t class="thick">struktury i prezentacji </t>
+dokumentów czyli: wszystkie polecenia
+dotyczące formatowania można umieścić w
+jednym miejscu (tzw. arkuszu) i powiązać je
+z konkretnymi elementami, wstawionymi za
+pomocą czystego (X)HTML. Taki sposób
+sprawia, że modyfikacja wyglądu stron może
+przebiegać dużo sprawniej.
+</td>
+  </tr>
+</table>
+
+<h3 class="left"> Nowe możliwości CSS </h3>
+
+<ol type="1">
+<li> <t class="thick">Przestarzałe atrybuty i znaczniki</t>, znajdujące się bezpośrednio w składni HTML, które
+dotyczą formatowania (elementy <t class="thick">zdeprecjonowane</t>), będą stopniowo wycofywane przez
+producentów przeglądarek internetowych, na rzecz rekomendowanych analogicznych
+deklaracji CSS.  
+</li>
+
+<li> Dokumenty pisane z wykorzystaniem arkuszy stylów są zwykle bardziej <t class="thick">przejrzyste i
+krótsze.</t>
+</li>
+
+<li> Style pozwalają <t class="thick">w łatwy  sposób zarządzać</t> całą serią dokumentów, poprzez stosowanie
+zewnętrznych arkuszy stylów. 
+</li>
+
+<li> Dzięki możliwości stosowania klas selektorów, znacznie oszczędzamy sobie pisania. W
+<t class="thick"> jednym miejscu określamy wszystkie atrybuty formatowania</t> (których może być bardzo
+dużo), odnoszące się do wielu elementów, które mają wyglądać tak samo. Bezpośrednio przy
+elemencie wystarczy podać tylko nazwę klasy i nie musimy już wypisywać dużej ilości
+poleceń. Znacznie przyspiesza to późniejszą modyfikację strony, ponieważ zmian
+dokonujemy tylko w jednym miejscu, a wpływają one na wiele elementów jednocześnie.
+</li>
+
+<li> 
+Możliwość <t class="thick"> stosowania różnorodnych jednostek oraz sposobów definiowania kolorów </t>
+</li>
+
+<li> 
+Różne wartości <t class="thick"> pogrubienia czcionki</t> (9 rodzajów)
+</li>
+
+<li> 
+<t class="thick"> Dodatkowe możliwości formatowania tekstu</t>
+</li>
+
+<li> 
+<t class="thick"> Efektowne filtry graficzne.</t>
+</li>
+
+<li> 
+Dodatkowe możliwości <t class="thick"> określenia wyglądu dokumentów podczas ich drukowania.</t>
+</li>
+
+</ol>
+
+
+	</body>
+</html>
