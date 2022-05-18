@@ -1,0 +1,14 @@
+p {
+color: red;
+font-size: 22 pt;
+ }
+ p#gruby_rychert {
+color: green;
+font-size: 17 pt;
+bold: true;
+ }
+  p#dlawszystkich_rychert {
+color: yellow;
+font-size: 10 pt;
+font-family: Arial;
+ }
